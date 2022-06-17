@@ -1,13 +1,20 @@
 /*Navbar*/ 
-.Navbar {
+/* .Navbar {
     padding: 20px;
     margin: 0 auto;
     text-align: center;
 }
-  
+   */
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+}
 
 /*Hover animation*/
-a {
+a.Title {
     position: relative;
     color: #403C3C;
     text-decoration: none;
@@ -15,11 +22,12 @@ a {
     font-weight: bold;
 }
   
-a:hover {
+a.Title:hover {
     color: #403C3C;
+    cursor: pointer;
 }
   
-a::before {
+a.Title::before {
     content: "";
     position: absolute;
     display: block;
@@ -33,7 +41,7 @@ a::before {
     transition: transform 0.3s ease;
 }
   
-a:hover::before {
+a.Title:hover::before {
     transform: scaleX(1);
 }
 
@@ -41,6 +49,17 @@ a:hover::before {
 .Logo {
     height: 100px;
     width: 170px;
-    padding: 0px;
-    
+    cursor: pointer;
 }
+
+/*Styling the icons */
+.Links {
+    list-style: none;
+    text-decoration: none;
+}
+
+.Links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+

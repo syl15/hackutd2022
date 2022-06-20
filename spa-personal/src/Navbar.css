@@ -24,7 +24,7 @@ a.Title {
   
 a.Title:hover {
     color: #403C3C;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
   
 a.Title::before {
@@ -49,7 +49,7 @@ a.Title:hover::before {
 .Logo {
     height: 100px;
     width: 170px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 /*Styling the icons */

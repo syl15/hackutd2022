@@ -1,4 +1,5 @@
 import './Panels.css';
+import Toggle from './Toggle';
 
 const Panels = () => {
     return ( 
@@ -17,6 +18,8 @@ const Panels = () => {
                     Turn on or off the ability for customers
                     and agents to bind quotes.
                 </div>
+                <br />
+                
             </div>
 
             {/* Card 2: Select a Channel  */}

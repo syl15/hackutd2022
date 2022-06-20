@@ -16,7 +16,6 @@ const Panels = () => {
                 <div className="Card-text">
                     Turn on or off the ability for customers
                     and agents to bind quotes.
-
                 </div>
             </div>
 

@@ -6,19 +6,28 @@
     display: flex; 
     flex-direction: row;
     justify-content: center;
+    align-items: stretch; /*stretch to same height*/
     color: #403C3C;
     gap: 50px;
 }
 
 .Card {
-    /* flex: 0 1 40%; */
     background-color: #F7F0E4; 
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: left;
-    width: 30%;
+    width: 30%; /*at smaller sizes: width: 30%,  at larger width: 20%*/
+    height: auto;
     margin-bottom: 50px;
-    transition: 0.3s;
     padding: 40px 40px; /*inside padding*/
+    
+    /*don't know how necessary this is*/
+    display: flex; 
+    flex-direction: column;
+    justify-content: left;
+    align-items: left; 
+
+    /*for the on hover animation*/
+    transition: 0.3s ease-in-out;
 }
 
 .Card:hover {

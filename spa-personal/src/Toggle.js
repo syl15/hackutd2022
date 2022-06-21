@@ -1,18 +1,22 @@
 import './Toggle.css';
 
 
-const Toggle = ({label}) => {
+const Toggle = () => {
     return ( 
         <div>
-            <div className="Toggle-switch">
-                <input type="checkbox" className="Checkbox" name ={label} id= {label} />
-                <label htmlFor={label} className="Label">
-                    <span className="Inner"></span>
-                    <span className="Switch"></span>
-                </label>
-            </div>
-        </div> 
-    );
+            <input 
+                type="checkbox" 
+                className="react-switch-checkbox"
+                id={`react-switch-new`}
+            />
+            <label 
+                htmlFor={`react-switch-new`}
+                className="react-switch-label">
+                
+                <span className={`react-switch-button`}></span>
+            </label>
+        </div>
+     );
 }
  
 export default Toggle;

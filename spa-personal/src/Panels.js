@@ -19,6 +19,7 @@ const Panels = () => {
                     and agents to bind quotes.
                 </div>
                 <br />
+                <Toggle/>
                 
             </div>
 

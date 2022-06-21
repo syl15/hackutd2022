@@ -1,67 +1,40 @@
-.Toggle-switch {
-    position: relative; 
-    width: 75px; 
-    display: inline-block;
-    text-align: left; 
-    top: 8px; 
+.react-switch-checkbox {
+    height: 0;
+    width: 0; 
+    visibility: hidden;
 }
 
-.Checkbox {
-    display: none;
-}
-
-.Label {
-    display: block;
-    overflow: hidden;
+.react-switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     cursor: pointer;
-    border: 0 solid #bbb;
-    border-radius: 20px;
+    width: 67px;
+    height: 32px;
+    background: #403C3C;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color .2s;
 }
 
-.Inner:before, .Inner:after {
-    float: left;
-    width: 50%; 
-    height: 36px;
-    padding: 0;
-    line-height: 36px; 
-    color: #FFF;
-    font-weight: bold; 
-    box-sizing: border-box;
-}
-
-.Inner:before {
-    content: "ON";
-    padding-left: 10px;
-    background-color: #060;
-    color: #FFF;
-}
-
-.Inner:after {
-    content: "OFF";
-    padding-right: 10px;
-    background-color: #BBB;
-    color: #FFF;
-    text-align: right;
-}
-
-.Switch {
-    display: block;
-    width: 24px;
-    margin: 5px;
-    background: #FFF;
+.react-switch-label .react-switch-button {
+    content: '';
     position: absolute;
-    top: 0;
-    bottom: 0; 
-    right: 40px;
-    border: 0 solid #BBB;
-    border-radius: 20px; 
-    transition: all 0.3s ease-in 0s;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 45px;
+    transition: 0.2s;
+    background: #FFF;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
 }
 
-.Checkbox:checked + .Label .Inner {
-    margin-left: 0;
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
 }
 
-.Checkbox:checked + .Label .Switch {
-    right: 0px;
+.react-switch-label:active .react-switch-button {
+    width: 60px;
 }

@@ -27,12 +27,12 @@
     align-items: left; 
 
     /*for the on hover animation*/
-    /* transition: 0.3s; */
+    transition: 0.3s;
 }
 
-/* .Card:hover {
+.Card:hover {
     transform: scale(1.05);
-} */
+}
 
 .Card-number {
     font-size: 40px; 
